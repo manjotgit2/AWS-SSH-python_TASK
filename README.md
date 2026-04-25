@@ -26,3 +26,11 @@ Check MySQL status:
 sudo systemctl status mysql
 Secure MySQL installation:
 sudo mysql_secure_installation
+Login to MySQL:
+sudo mysql -u root -p
+Create database:
+CREATE DATABASE mydb;
+Create user and grant privileges:
+CREATE USER 'devops'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON mydb.* TO 'devops'@'localhost';
+FLUSH PRIVILEGES;
