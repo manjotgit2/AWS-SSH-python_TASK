@@ -34,3 +34,21 @@ Create user and grant privileges:
 CREATE USER 'devops'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON mydb.* TO 'devops'@'localhost';
 FLUSH PRIVILEGES;
+Commands Used
+###########################Linux Commands
+pwd
+ls
+cd
+mkdir
+rm
+EC2 Connection
+chmod 400 my-key.pem
+ssh -i my-key.pem ubuntu@<public-ip>
+Package Management
+sudo apt update
+sudo apt install mysql-server
+MySQL Commands
+SHOW DATABASES;
+USE mydb;
+CREATE TABLE users(id INT, name VARCHAR(50));
+SELECT * FROM users;
