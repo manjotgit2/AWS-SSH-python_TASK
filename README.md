@@ -52,3 +52,9 @@ SHOW DATABASES;
 USE mydb;
 CREATE TABLE users(id INT, name VARCHAR(50));
 SELECT * FROM users;
+##############tools which were used
+- AWS EC2
+- SSH
+- Linux (Ubuntu)
+- MySQL
+- Bash scripting
