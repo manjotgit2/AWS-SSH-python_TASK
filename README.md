@@ -17,3 +17,12 @@ Click Launch Instance
 Connect to instance using SSH:
 chmod 400 my-key.pem
 ssh -i my-key.pem ubuntu@<public-ip>
+#####MySQL Installation Steps
+Update system packages:
+sudo apt update
+Install MySQL server:
+sudo apt install mysql-server -y
+Check MySQL status:
+sudo systemctl status mysql
+Secure MySQL installation:
+sudo mysql_secure_installation
